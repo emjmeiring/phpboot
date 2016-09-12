@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+	<TITLE>Mendeleiev</TITLE>
+	<STYLE>
+	.block {
+		position: relative;
+		width: 980px;
+		height: 700px;
+		margin: 2px;
+		float: left;
+		border: 2px solid grey
+	}
+	.elem_number
+	{
+		position: relative;
+		margin: 1px;
+	}
+	.elem
+	{
+		position: relative;
+		margin: 1px;
+	}
+	.atom_weight
+	{
+		position: relative;
+		margin: 1px;	
+	}
+	.empty
+	{
+		position: relative;
+		width: 50px;
+		height: 60px;
+		float: left;
+		margin: 2px;
+	}
+	</STYLE>
+	</HEAD>
+	<BODY>
+	<DIV class="block">
+		<DIV class="empty" style="background: rgb(150,111,110)">
+			<p class="elem_number" contenteditable="true">1</p>
+			<h3 class="elem" contenteditable="true">H</h3>
+			<p class="atom_weight" contenteditable="true" contenteditable="true">1.0079</p>			
+		</DIV>
+		<DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV>
+		<DIV class="empty" style="background: rgb(0,255,255)">
+			<p class="elem_number" contenteditable="true">2</p>
+			<h3 class="elem" contenteditable="true" contenteditable="true">He</h3>
+			<p class="atom_weight" contenteditable="true" contenteditable="true">4</p>			
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,0,0)">
+			<p class="elem_number" contenteditable="true">3</p>
+			<h3 class="elem" contenteditable="true">Li</h3>
+			<p class="atom_weight" contenteditable="true" contenteditable="true">6.9</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,255,0)">
+			<p class="elem_number" contenteditable="true">4</p>
+			<h3 class="elem" contenteditable="true">Be</h3>
+			<p class="atom_weight" contenteditable="true" contenteditable="true">9.012</p>
+		</DIV>
+		<DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV>		
+		<DIV class="empty" style="background: rgb(0,255,0)">
+			<p class="elem_number" contenteditable="true">5</p>
+			<h3 class="elem" contenteditable="true">B</h3>
+			<p class="atom_weight" contenteditable="true" contenteditable="true">10.8</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(0,255,0)">
+			<p class="elem_number" contenteditable="true">6</p>
+			<h3 class="elem" contenteditable="true">C</h3>
+			<p class="atom_weight" contenteditable="true" contenteditable="true">12.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(0,255,0)">
+			<p class="elem_number" contenteditable="true">7</p>
+			<h3 class="elem" contenteditable="true">N</h3>
+			<p class="atom_weight" contenteditable="true" contenteditable="true">14.008</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(0,255,0)">
+			<p class="elem_number" contenteditable="true">8</p>
+			<h3 class="elem" contenteditable="true">O</h3>
+			<p class="atom_weight" contenteditable="true" contenteditable="true">15.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(0,255,0)">
+			<p class="elem_number" contenteditable="true">9</p>
+			<h3 class="elem" contenteditable="true">F</h3>
+			<p class="atom_weight" contenteditable="true" contenteditable="true">18.99</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(0,255,255)">
+			<p class="elem_number" contenteditable="true">10</p>
+			<h3 class="elem" contenteditable="true">Ne</h3>
+			<p class="atom_weight" contenteditable="true">20.179</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,0,0)">
+			<p class="elem_number" contenteditable="true">11</p>
+			<h3 class="elem" contenteditable="true">Na</h3>
+			<p class="atom_weight" contenteditable="true">22.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,255,0)">
+			<p class="elem_number" contenteditable="true">12</p>
+			<h3 class="elem" contenteditable="true">Mg</h3>
+			<p class="atom_weight" contenteditable="true">24.01</p>
+		</DIV>
+		<DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV>
+		<DIV class="empty" style="background: rgb(180,255,150)">
+			<p class="elem_number" contenteditable="true">13</p>
+			<h3 class="elem" contenteditable="true">Al</h3>
+			<p class="atom_weight" contenteditable="true">26.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(0,255,0)">
+			<p class="elem_number" contenteditable="true">14</p>
+			<h3 class="elem" contenteditable="true">Si</h3>
+			<p class="atom_weight" contenteditable="true">28.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(0,255,0)">
+			<p class="elem_number" contenteditable="true">15</p>
+			<h3 class="elem" contenteditable="true">P</h3>
+			<p class="atom_weight" contenteditable="true">30.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(0,255,0)">
+			<p class="elem_number" contenteditable="true">16</p>
+			<h3 class="elem" contenteditable="true">S</h3>
+			<p class="atom_weight" contenteditable="true">32.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(0,255,0)">
+			<p class="elem_number" contenteditable="true">17</p>
+			<h3 class="elem" contenteditable="true">Cl</h3>
+			<p class="atom_weight" contenteditable="true">35.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(0,255,255)">
+			<p class="elem_number" contenteditable="true">18</p>
+			<h3 class="elem" contenteditable="true">Ar</h3>
+			<p class="atom_weight" contenteditable="true">39.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,0,0)">
+			<p class="elem_number" contenteditable="true">19</p>
+			<h3 class="elem" contenteditable="true">K</h3>
+			<p class="atom_weight" contenteditable="true">39.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,255,0)">
+			<p class="elem_number" contenteditable="true">20</p>
+			<h3 class="elem" contenteditable="true">Ca</h3>
+			<p class="atom_weight" contenteditable="true">40.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">21</p>
+			<h3 class="elem" contenteditable="true">Sc</h3>
+			<p class="atom_weight" contenteditable="true">44.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">22</p>
+			<h3 class="elem" contenteditable="true">Ti</h3>
+			<p class="atom_weight" contenteditable="true">47.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">23</p>
+			<h3 class="elem" contenteditable="true">V</h3>
+			<p class="atom_weight" contenteditable="true">50.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">24</p>
+			<h3 class="elem" contenteditable="true">Cr</h3>
+			<p class="atom_weight" contenteditable="true">51.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">25</p>
+			<h3 class="elem" contenteditable="true">Mn</h3>
+			<p class="atom_weight" contenteditable="true">54.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">26</p>
+			<h3 class="elem" contenteditable="true">Fe</h3>
+			<p class="atom_weight" contenteditable="true">55.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">27</p>
+			<h3 class="elem" contenteditable="true">Co</h3>
+			<p class="atom_weight" contenteditable="true">56.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">28</p>
+			<h3 class="elem" contenteditable="true">Ni</h3>
+			<p class="atom_weight" contenteditable="true">58.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">29</p>
+			<h3 class="elem" contenteditable="true">Cu</h3>
+			<p class="atom_weight" contenteditable="true">63.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(180,255,150)">
+			<p class="elem_number" contenteditable="true">30</p>
+			<h3 class="elem" contenteditable="true">Zn</h3>
+			<p class="atom_weight" contenteditable="true">65.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(180,255,150)">
+			<p class="elem_number" contenteditable="true">31</p>
+			<h3 class="elem" contenteditable="true">Ga</h3>
+			<p class="atom_weight" contenteditable="true">69.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(180,255,150)">
+			<p class="elem_number" contenteditable="true">32</p>
+			<h3 class="elem" contenteditable="true">Ge</h3>
+			<p class="atom_weight" contenteditable="true">72.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(0,255,0)">
+			<p class="elem_number" contenteditable="true">33</p>
+			<h3 class="elem" contenteditable="true">As</h3>
+			<p class="atom_weight" contenteditable="true">74.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(0,255,0)">
+			<p class="elem_number" contenteditable="true">34</p>
+			<h3 class="elem" contenteditable="true">Se</h3>
+			<p class="atom_weight" contenteditable="true">78.901</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(0,255,0)">
+			<p class="elem_number" contenteditable="true">35</p>
+			<h3 class="elem" contenteditable="true">Br</h3>
+			<p class="atom_weight" contenteditable="true">79.901</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(0,255,255)">
+			<p class="elem_number" contenteditable="true">36</p>
+			<h3 class="elem" contenteditable="true">Kr</h3>
+			<p class="atom_weight" contenteditable="true">83.901</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,0,0)">
+			<p class="elem_number" contenteditable="true">37</p>
+			<h3 class="elem" contenteditable="true">Rb</h3>
+			<p class="atom_weight" contenteditable="true">85.901</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,255,0)">
+			<p class="elem_number" contenteditable="true">38</p>
+			<h3 class="elem" contenteditable="true">Sr</h3>
+			<p class="atom_weight" contenteditable="true">87.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">39</p>
+			<h3 class="elem" contenteditable="true">Y</h3>
+			<p class="atom_weight" contenteditable="true">88.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">40</p>
+			<h3 class="elem" contenteditable="true">Zr</h3>
+			<p class="atom_weight" contenteditable="true">91.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">41</p>
+			<h3 class="elem" contenteditable="true">Nb</h3>
+			<p class="atom_weight" contenteditable="true">92.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">42</p>
+			<h3 class="elem" contenteditable="true">Mo</h3>
+			<p class="atom_weight" contenteditable="true">95.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">43</p>
+			<h3 class="elem" contenteditable="true">Tc</h3>
+			<p class="atom_weight" contenteditable="true">97.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">44</p>
+			<h3 class="elem" contenteditable="true">Ru</h3>
+			<p class="atom_weight" contenteditable="true">101.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">45</p>
+			<h3 class="elem" contenteditable="true">Rh</h3>
+			<p class="atom_weight" contenteditable="true">102.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">46</p>
+			<h3 class="elem" contenteditable="true">Pd</h3>
+			<p class="atom_weight" contenteditable="true">105.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">47</p>
+			<h3 class="elem" contenteditable="true">Ag</h3>
+			<p class="atom_weight" contenteditable="true">107.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(180,255,150)">
+			<p class="elem_number" contenteditable="true">48</p>
+			<h3 class="elem" contenteditable="true">Cd</h3>
+			<p class="atom_weight" contenteditable="true">112.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(180,255,150)">
+			<p class="elem_number" contenteditable="true">49</p>
+			<h3 class="elem" contenteditable="true">In</h3>
+			<p class="atom_weight" contenteditable="true">114.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(180,255,150)">
+			<p class="elem_number" contenteditable="true">50</p>
+			<h3 class="elem" contenteditable="true">Sn</h3>
+			<p class="atom_weight" contenteditable="true">118.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(180,255,150)">
+			<p class="elem_number" contenteditable="true">51</p>
+			<h3 class="elem" contenteditable="true">Sb</h3>
+			<p class="atom_weight" contenteditable="true">121.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(0,255,0)">
+			<p class="elem_number" contenteditable="true">52</p>
+			<h3 class="elem" contenteditable="true">Te</h3>
+			<p class="atom_weight" contenteditable="true">127.1</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(0,255,0)">
+			<p class="elem_number" contenteditable="true">53</p>
+			<h3 class="elem" contenteditable="true">I</h3>
+			<p class="atom_weight" contenteditable="true">126.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(0,255,255)">
+			<p class="elem_number" contenteditable="true">54</p>
+			<h3 class="elem" contenteditable="true">Xe</h3>
+			<p class="atom_weight" contenteditable="true">131.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,0,0)">
+			<p class="elem_number" contenteditable="true">55</p>
+			<h3 class="elem" contenteditable="true">Cs</h3>
+			<p class="atom_weight" contenteditable="true">132.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,255,0)">
+			<p class="elem_number" contenteditable="true">56</p>
+			<h3 class="elem" contenteditable="true">Ba</h3>
+			<p class="atom_weight" contenteditable="true">137.90</p>
+		</DIV>
+		<DIV class="empty"></DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">72</p>
+			<h3 class="elem" contenteditable="true">Hf</h3>
+			<p class="atom_weight" contenteditable="true">178.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">73</p>
+			<h3 class="elem" contenteditable="true">Ta</h3>
+			<p class="atom_weight" contenteditable="true">180.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">74</p>
+			<h3 class="elem" contenteditable="true">W</h3>
+			<p class="atom_weight" contenteditable="true">183.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">75</p>
+			<h3 class="elem" contenteditable="true">Re</h3>
+			<p class="atom_weight" contenteditable="true">185.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">76</p>
+			<h3 class="elem" contenteditable="true">Os</h3>
+			<p class="atom_weight" contenteditable="true">190.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">77</p>
+			<h3 class="elem" contenteditable="true">Ir</h3>
+			<p class="atom_weight" contenteditable="true">192.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">78</p>
+			<h3 class="elem" contenteditable="true">Pt</h3>
+			<p class="atom_weight" contenteditable="true">195.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">79</p>
+			<h3 class="elem" contenteditable="true">Au</h3>
+			<p class="atom_weight" contenteditable="true">196.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(180,255,150)">
+			<p class="elem_number" contenteditable="true">80</p>
+			<h3 class="elem" contenteditable="true">Hg</h3>
+			<p class="atom_weight" contenteditable="true">200.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(180,255,150)">
+			<p class="elem_number" contenteditable="true">81</p>
+			<h3 class="elem" contenteditable="true">Ti</h3>
+			<p class="atom_weight" contenteditable="true">204.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(180,255,150)">
+			<p class="elem_number" contenteditable="true">82</p>
+			<h3 class="elem" contenteditable="true">Pb</h3>
+			<p class="atom_weight" contenteditable="true">207.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(180,255,150)">
+			<p class="elem_number" contenteditable="true">83</p>
+			<h3 class="elem" contenteditable="true">Bi</h3>
+			<p class="atom_weight" contenteditable="true">208.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(180,255,150)">
+			<p class="elem_number" contenteditable="true">84</p>
+			<h3 class="elem" contenteditable="true">Po</h3>
+			<p class="atom_weight" contenteditable="true">208.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(0,255,0)">
+			<p class="elem_number" contenteditable="true">85</p>
+			<h3 class="elem" contenteditable="true">At</h3>
+			<p class="atom_weight" contenteditable="true">209.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(0,255,255)">
+			<p class="elem_number" contenteditable="true">86</p>
+			<h3 class="elem" contenteditable="true">Rn</h3>
+			<p class="atom_weight" contenteditable="true">222.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,0,0)">
+			<p class="elem_number" contenteditable="true">87</p>
+			<h3 class="elem" contenteditable="true">Fr</h3>
+			<p class="atom_weight" contenteditable="true">223.01</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,255,0)">
+			<p class="elem_number" contenteditable="true">88</p>
+			<h3 class="elem" contenteditable="true">Ra</h3>
+			<p class="atom_weight" contenteditable="true">226.90</p>
+		</DIV>
+		<DIV class="empty"></DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">104</p>
+			<h3 class="elem" contenteditable="true">Rf</h3>
+			<p class="atom_weight" contenteditable="true">261.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">105</p>
+			<h3 class="elem" contenteditable="true">Db</h3>
+			<p class="atom_weight" contenteditable="true">262.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">106</p>
+			<h3 class="elem" contenteditable="true">Sg</h3>
+			<p class="atom_weight" contenteditable="true">266.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">107</p>
+			<h3 class="elem" contenteditable="true">Bh</h3>
+			<p class="atom_weight" contenteditable="true">264.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">108</p>
+			<h3 class="elem" contenteditable="true">Hs</h3>
+			<p class="atom_weight" contenteditable="true">277.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">109</p>
+			<h3 class="elem" contenteditable="true">Mt</h3>
+			<p class="atom_weight" contenteditable="true">268.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">110</p>
+			<h3 class="elem" contenteditable="true">Ds</h3>
+			<p class="atom_weight" contenteditable="true">271.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,55,100)">
+			<p class="elem_number" contenteditable="true">111</p>
+			<h3 class="elem" contenteditable="true">Rg</h3>
+			<p class="atom_weight" contenteditable="true">272.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(180,255,150)">
+			<p class="elem_number" contenteditable="true">112</p>
+			<h3 class="elem" contenteditable="true">Uub</h3>
+			<p class="atom_weight" contenteditable="true">285.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(180,255,150)">
+			<p class="elem_number" contenteditable="true">113</p>
+			<h3 class="elem" contenteditable="true">Uut</h3>
+			<p class="atom_weight" contenteditable="true">284.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(180,255,150)">
+			<p class="elem_number" contenteditable="true">114</p>
+			<h3 class="elem" contenteditable="true">Uuq</h3>
+			<p class="atom_weight" contenteditable="true">289.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(180,255,150)">
+			<p class="elem_number" contenteditable="true">115</p>
+			<h3 class="elem" contenteditable="true">Uup</h3>
+			<p class="atom_weight" contenteditable="true">288.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(180,255,150)">
+			<p class="elem_number" contenteditable="true">116</p>
+			<h3 class="elem" contenteditable="true">Uuh</h3>
+			<p class="atom_weight" contenteditable="true">292.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(255,255,255)">
+			<p class="elem_number" contenteditable="true">117</p>
+			<h3 class="elem" contenteditable="true">Uus</h3>
+			<p class="atom_weight" contenteditable="true"> </p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(0,255,255)">
+			<p class="elem_number" contenteditable="true">118</p>
+			<h3 class="elem" contenteditable="true">Uuo</h3>
+			<p class="atom_weight" contenteditable="true">294.90</p>
+		</DIV>
+		<DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV>
+		<DIV class="empty" style="background: rgb(90,25,55)">
+			<p class="elem_number" contenteditable="true">57</p>
+			<h3 class="elem" contenteditable="true">La</h3>
+			<p class="atom_weight" contenteditable="true">138.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(90,25,55)">
+			<p class="elem_number" contenteditable="true">58</p>
+			<h3 class="elem" contenteditable="true">Ce</h3>
+			<p class="atom_weight" contenteditable="true">140.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(90,25,55)">
+			<p class="elem_number" contenteditable="true">59</p>
+			<h3 class="elem" contenteditable="true">Pr</h3>
+			<p class="atom_weight" contenteditable="true">140.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(90,25,55)">
+			<p class="elem_number" contenteditable="true">60</p>
+			<h3 class="elem" contenteditable="true">Nd</h3>
+			<p class="atom_weight" contenteditable="true">144.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(90,25,55)">
+			<p class="elem_number" contenteditable="true">61</p>
+			<h3 class="elem" contenteditable="true">Pm</h3>
+			<p class="atom_weight" contenteditable="true">145.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(90,25,55)">
+			<p class="elem_number" contenteditable="true">62</p>
+			<h3 class="elem" contenteditable="true">Sm</h3>
+			<p class="atom_weight" contenteditable="true">150.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(90,25,55)">
+			<p class="elem_number" contenteditable="true">63</p>
+			<h3 class="elem" contenteditable="true">Eu</h3>
+			<p class="atom_weight" contenteditable="true">151.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(90,25,55)">
+			<p class="elem_number" contenteditable="true">64</p>
+			<h3 class="elem" contenteditable="true">Gd</h3>
+			<p class="atom_weight" contenteditable="true">157.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(90,25,55)">
+			<p class="elem_number" contenteditable="true">65</p>
+			<h3 class="elem" contenteditable="true">Tb</h3>
+			<p class="atom_weight" contenteditable="true">158.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(90,25,55)">
+			<p class="elem_number" contenteditable="true">66</p>
+			<h3 class="elem" contenteditable="true">Dy</h3>
+			<p class="atom_weight" contenteditable="true">162.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(90,25,55)">
+			<p class="elem_number" contenteditable="true">67</p>
+			<h3 class="elem" contenteditable="true">Ho</h3>
+			<p class="atom_weight" contenteditable="true">164.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(90,25,55)">
+			<p class="elem_number" contenteditable="true">68</p>
+			<h3 class="elem" contenteditable="true">Er</h3>
+			<p class="atom_weight" contenteditable="true">167.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(90,25,55)">
+			<p class="elem_number" contenteditable="true">69</p>
+			<h3 class="elem" contenteditable="true">Tm</h3>
+			<p class="atom_weight" contenteditable="true">168.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(90,25,55)">
+			<p class="elem_number" contenteditable="true">70</p>
+			<h3 class="elem" contenteditable="true">Yb</h3>
+			<p class="atom_weight" contenteditable="true">173.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(90,25,55)">
+			<p class="elem_number" contenteditable="true">71</p>
+			<h3 class="elem" contenteditable="true">Lu</h3>
+			<p class="atom_weight" contenteditable="true">174.90</p>
+		</DIV>
+		<DIV class="empty"></DIV><DIV class="empty"></DIV><DIV class="empty"></DIV>
+		<DIV class="empty" style="background: rgb(40,255,155)">
+			<p class="elem_number" contenteditable="true">89</p>
+			<h3 class="elem" contenteditable="true">Ac</h3>
+			<p class="atom_weight" contenteditable="true">227.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(40,255,155)">
+			<p class="elem_number" contenteditable="true">90</p>
+			<h3 class="elem" contenteditable="true">Th</h3>
+			<p class="atom_weight" contenteditable="true">232.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(40,255,155)">
+			<p class="elem_number" contenteditable="true">91</p>
+			<h3 class="elem" contenteditable="true">Pa</h3>
+			<p class="atom_weight" contenteditable="true">231.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(40,255,155)">
+			<p class="elem_number" contenteditable="true">92</p>
+			<h3 class="elem" contenteditable="true">U</h3>
+			<p class="atom_weight" contenteditable="true">238.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(40,255,155)">
+			<p class="elem_number" contenteditable="true">93</p>
+			<h3 class="elem" contenteditable="true">Np</h3>
+			<p class="atom_weight" contenteditable="true">237.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(40,255,155)">
+			<p class="elem_number" contenteditable="true">94</p>
+			<h3 class="elem" contenteditable="true">Pu</h3>
+			<p class="atom_weight" contenteditable="true">244.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(40,255,155)">
+			<p class="elem_number" contenteditable="true">95</p>
+			<h3 class="elem" contenteditable="true">Am</h3>
+			<p class="atom_weight" contenteditable="true">243.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(40,255,155)">
+			<p class="elem_number" contenteditable="true">96</p>
+			<h3 class="elem" contenteditable="true">Cm</h3>
+			<p class="atom_weight" contenteditable="true">247</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(40,255,155)">
+			<p class="elem_number" contenteditable="true">97</p>
+			<h3 class="elem" contenteditable="true">Bk</h3>
+			<p class="atom_weight" contenteditable="true">247.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(40,255,155)">
+			<p class="elem_number" contenteditable="true">98</p>
+			<h3 class="elem" contenteditable="true">Cf</h3>
+			<p class="atom_weight" contenteditable="true">251.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(40,255,155)">
+			<p class="elem_number" contenteditable="true">99</p>
+			<h3 class="elem" contenteditable="true">Es</h3>
+			<p class="atom_weight" contenteditable="true">252.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(40,255,155)">
+			<p class="elem_number" contenteditable="true">100</p>
+			<h3 class="elem" contenteditable="true">Fm</h3>
+			<p class="atom_weight" contenteditable="true">257.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(40,255,155)">
+			<p class="elem_number" contenteditable="true">101</p>
+			<h3 class="elem" contenteditable="true">Md</h3>
+			<p class="atom_weight" contenteditable="true">258.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(40,255,155)">
+			<p class="elem_number" contenteditable="true">102</p>
+			<h3 class="elem" contenteditable="true">No</h3>
+			<p class="atom_weight" contenteditable="true">259.90</p>
+		</DIV>
+		<DIV class="empty" style="background: rgb(40,255,155)">
+			<p class="elem_number" contenteditable="true">103</p>
+			<h3 class="elem" contenteditable="true">Lr</h3>
+			<p class="atom_weight" contenteditable="true">262.90</p>
+		</DIV>
+	</DIV>
+	<IMG src=http://mantality.co.za/images/category_images/beer-making-homebrew.jpg width=480 height=300 alt="no conection">
+	</BODY>
+</HTML>
